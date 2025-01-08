@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AdSpace</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #4CAF50;
+            color: white;
+            text-align: center;
+            padding: 1rem;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #333;
+        }
+        nav a {
+            color: white;
+            padding: 14px 20px;
+            text-decoration: none;
+            text-align: center;
+        }
+        nav a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+        .ad-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            margin: 20px;
+        }
+        .ad {
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            margin: 10px;
+            width: 300px;
+            overflow: hidden;
+        }
+        .ad img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+        .ad-content {
+            padding: 10px;
+        }
+        .ad-content h3 {
+            margin: 0;
+            font-size: 1.2rem;
+        }
+        .ad-content p {
+            font-size: 0.9rem;
+            color: #555;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Welcome to AdSpace</h1>
+    <p>Your go-to platform for showcasing ads</p>
+</header>
+
+<nav>
+    <a href="#">Home</a>
+    <a href="#about">About</a>
+    <a href="#ads">Ads</a>
+    <a href="#contact">Contact</a>
+</nav>
+
+<main>
+    <section id="about">
+        <h2>About Us</h2>
+        <p>AdSpace is a platform designed to connect advertisers with a wide audience. Showcase your products and services to potential customers.</p>
+    </section>
+
+    <section id="ads">
+        <h2>Featured Ads</h2>
+        <div class="ad-container">
+            <div class="ad">
+                <img src="https://via.placeholder.com/300x200" alt="Ad 1">
+                <div class="ad-content">
+                    <h3>Product 1</h3>
+                    <p>Discover the amazing features of Product 1. Limited time offer!</p>
+                </div>
+            </div>
+            <div class="ad">
+                <img src="https://via.placeholder.com/300x200" alt="Ad 2">
+                <div class="ad-content">
+                    <h3>Service 2</h3>
+                    <p>Experience the best with Service 2. Book now!</p>
+                </div>
+            </div>
+            <div class="ad">
+                <img src="https://via.placeholder.com/300x200" alt="Ad 3">
+                <div class="ad-content">
+                    <h3>Product 3</h3>
+                    <p>Get Product 3 at an unbeatable price. Don't miss out!</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <p>Email: contact@adspace.com</p>
+        <p>Phone: (123) 456-7890</p>
+    </section>
+</main>
+
+<footer>
+    <p>&copy; 2025 AdSpace. All rights reserved.</p>
+</footer>
+
+</body>
+</html>
